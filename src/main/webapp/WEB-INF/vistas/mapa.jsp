@@ -12,7 +12,7 @@
 
 <body>
 
-	<div id="map" style="height: 500px; width: 500px;"></div>
+	<div id="map" style="height: 1000px; width: 100%';"></div>
 	<script>
     function initialize() {
          var image='logo.png';
