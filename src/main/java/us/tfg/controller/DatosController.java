@@ -53,22 +53,22 @@ public class DatosController {
         if ("SIGNAL_4G".equals(signal)){
             if (dbm != null) {
                 if (dbm>=-90){
-                    return "1";
-                }else if (dbm<=-91 && dbm >= -105){
-                    return "2";
-                }else if(dbm <= -106 && dbm >= -110){
                     return "3";
-                }else if(dbm <=-111 && dbm > -115){
-                    return "5";
-                }else if(dbm <=-116 && dbm >-120){
+                }else if (dbm<=-91 && dbm >= -105){
+                    return "6";
+                }else if(dbm <= -106 && dbm >= -110){
                     return "7";
+                }else if(dbm <=-111 && dbm > -115){
+                    return "20";
+                }else if(dbm <=-116 && dbm >-120){
+                    return "30";
                 }else if(dbm <= -120){
-                    return "15";
+                    return "40";
                 }else{
-                    return "15";
+                    return "40";
                 }
             }else{
-                 return "15";
+                 return "40";
             }
         }else if("SIGNAL_3G".equals(signal) || "SIGNAL_2G".equals(signal)){
             if (dbm != null) {

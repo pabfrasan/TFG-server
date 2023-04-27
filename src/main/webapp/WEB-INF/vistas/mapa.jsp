@@ -42,9 +42,10 @@
 	});
 
 	var heatmap = new google.maps.visualization.HeatmapLayer({
-		data : heatMapData
+		data : heatMapData,
+		
 	});
-	heatmap.set("radius",20);
+	heatmap.set("radius",50);
 	heatmap.setMap(map);
   </script>
 
